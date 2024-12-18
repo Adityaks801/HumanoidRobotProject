@@ -1,0 +1,8 @@
+openai
+pyttsx3
+speechrecognition
+googletrans==4.0.0-rc1
+opencv-python
+mediapipe
+torch  # Required for YOLOv5
+yolov5  # YOLOv5 dependencies
