@@ -6,7 +6,8 @@ import pyttsx3
 import cv2
 from object_detection import detect_objects
 from gesture_recognition import recognize_gesture
-from speech_recognition import MultilingualSpeechRecognition
+from speech_recognition_module import MultilingualSpeechRecognition
+
 from response_generation import ResponseGeneration
 
 
@@ -19,7 +20,7 @@ def speak_response(response_text):
 def main():
     openai_api_key = 'your_openai_api_key_here'  # Set your OpenAI API key
     response_generator = ResponseGeneration(openai_api_key)
-    speech_recognition = MultilingualSpeechRecognition()
+    speech_recognition_module = MultilingualSpeechRecognition()
 
     # For object detection and gesture recognition, using a webcam
     cap = cv2.VideoCapture(0)
